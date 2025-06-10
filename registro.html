@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passaporte para o Reino de Deus</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;">Preencha esse pequeno formulário para prosseguir</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Conhecendo você</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" required name="nome"><br><br>
+
+            <label>Religião:</label><br>
+            <input type="radio" name="religiao" id="cristao" value="cristao">
+            <label for="cristao">Cristão</label><br>
+
+            <input type="radio" name="religiao" id="islamismo" value="islamismo">
+            <label for="islamismo">Islamismo</label><br>
+
+            <input type="radio" name="religiao" id="judaismo" value="judaismo">
+            <label for="judaismo">Judaísmo</label><br><br>
+
+            <label for="igreja">Igreja:</label><br>
+            <select name="igreja" id="igreja">
+                <option value="catolico">Católico</option>
+                <option value="evangelico">Evangélico</option>
+                <option value="ortodoxo">Ortodóxo</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>O que você sabe de Jesus</legend>
+
+            <label for="conhecimento">Nível de conhecimento sobre Jesus:</label><br>
+            <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos"><br>
+            <datalist id="lista-conhecimentos">
+                <option value="eu conheço muito">
+                <option value="eu conheço um pouco">
+                <option value="eu só ouvi falar">
+                <option value="eu não conheço nada">
+            </datalist><br><br>
+
+            <label>Você gosta mais do Novo ou Velho Testamento?</label><br>
+            <input type="checkbox" name="preferencia[]" id="novo" value="novo">
+            <label for="novo">Novo</label><br>
+
+            <input type="checkbox" name="preferencia[]" id="velho" value="velho">
+            <label for="velho">Velho</label><br>
+
+            <input type="checkbox" name="preferencia[]" id="nunca_li" value="nunca li">
+            <label for="nunca_li">Nunca li</label>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" name="btn1" value="Cadastrar"> 
+       <a href="conhecendo_jesus.html">Convidamos voce a conhecer mais sobre o nosso senhor Jesus</a> 
+
+    </form>
+
+</body>
+</html>
